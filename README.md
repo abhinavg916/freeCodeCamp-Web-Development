@@ -7,7 +7,7 @@
   * Data Visualization Certification
   * APIs and Microservices Certification
   * Information Security and Quality Assurance Certification
-  * Coding Interview Prep (Thousands of hours of challenges)__
+  * Coding Interview Prep (Thousands of hours of challenges)
 
 ![freeCodeCamp](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
 
