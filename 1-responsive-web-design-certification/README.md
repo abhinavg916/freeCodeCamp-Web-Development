@@ -2,6 +2,12 @@
 ## General Instructions
 * It is divided into 7 modules
   * Basic HTML and HTML5
+  * Basic CSS
+  * Applied Visual Design
+  * Applied Accessibility
+  * Responsive Web Design Principles
+  * CSS Flexbox
+  * CSS Grid
   
 ![freeCodeCamp](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
 
