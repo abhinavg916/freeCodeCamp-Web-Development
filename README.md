@@ -1,6 +1,6 @@
 # freeCodeCamp Web Development Certification
 ## General Instructions
-* __Course__ - [Web Development Certifications](https://www.freecodecamp.org/learn)
+* __Course__ - [__Web Development Certifications__](https://www.freecodecamp.org/learn)
 * It is divided into __7 sub-certifications__ and which are (in order):
   * Responsive Web Design Certification 
   * JavaScript Algorithms and Data Structures Certification
