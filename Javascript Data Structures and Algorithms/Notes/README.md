@@ -1,5 +1,5 @@
-# JavaScript Data Structures and Algorithms Important Points
-### Basic JavaScript: Declare JavaScript Variables Passed
+# Important Points
+## Basic JavaScript: Declare JavaScript Variables Passed
 * In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.
 
 ### Basic JavaScript: Understanding Uninitialized Variables
