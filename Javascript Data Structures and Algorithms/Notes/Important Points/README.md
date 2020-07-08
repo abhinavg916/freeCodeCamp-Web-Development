@@ -1,35 +1,76 @@
 # Important Points
 ## Basic JavaScript
-* __Declare JavaScript Variables Passed__
-* JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.
+* __Declare JavaScript Variables__
+* JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
 * __Understanding Uninitialized Variables__
-* When JavaScript variables are declared, they have an initial value of __undefined__. If you do a mathematical operation on an undefined variable your result will be __NaN__ which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined".
+* When JavaScript variables are declared, they have an initial value of undefined. 
+* If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number"
+* If you concatenate a string with an undefined variable, you will get a literal string of "undefined"
 * __Understanding Case Sensitivity in Variables__
-* Best Practice - The variable names in JavaScript in __camelCase__. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+* Best Practice - The variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
 * __Declare String Variables Passed__
-*  String is a series of zero or more characters enclosed in __single__ or __double quotes__.
+*  String is a series of zero or more characters enclosed in single or double quotes
 * __Escaping Literal Quotes in Strings__
-* In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (`\`) in front of the quote.
+* In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (`\`) in front of the quote
 * Quoting Strings with Single Quotes - `conversation = 'Finn exclaims to Jake, "Algebraic!"';` => Acceptable
-* However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
+* However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error
 ```
 goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
 badStr = 'Finn responds, "Let's go!"'; // Throws an error
 ```
+* __Escape Sequences in Strings__
+```
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+```
+* __Concatenating Strings with the Plus Equals Operator__
+* Js supports the use of `+=` operator to concatenate a string onto the end of an existing string variable.
+* __Appending Variables to StringsPassed__
+* Append variables to a string using the plus equals `+=` operator
+```
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+// ourStr is now "freeCodeCamp is awesome!"
+```
+* __Use of Bracket Notation to Find the Character in a String__
+```
+var firstName = "Charles";
+var firstLetter = firstName[0]; // firstLetter is "C
+```
 * __Find the Length of a String__
-* The length of a String value by writing `.length` after the string variable or string literal.
+* The length of a String value by writing `.length` after the string variable or string literal
 * __Understand String Immutability__
-* In JavaScript, String values are immutable, which means that they cannot be altered once created.
-
-* __ Basic JavaScript: Nest one Array within Another Array
+* In JavaScript, String values are immutable, which means that they cannot be altered once created
+* The individual characters of a string literal cannot be changed
+* The only way to change myStr would be to assign it with a new string
+```
+var myStr = "Bob";
+myStr[0] = "J"; // Error
+```
+```
+var myStr = "Bob";
+myStr = "Job"; // Correct
+```
+* __Store Multiple Values in one Variable using JavaScript Arrays__
+* It can contain multiple data type into one arraly like both a string and a number
+```
+var sandwich = ["peanut butter", "jelly", "bread", 100];
+```
+* __Nest one Array within Another Array__
 * You can also nest arrays within other arrays, like below:
 ```
 [["Bulls", 23], ["White Sox", 45]]
 ```
-* __ Basic JavaScript: Access Multi-Dimensional Arrays With Indexes
-* One way to think of a multi-dimensional array, is as an array of arrays. When you use brackets to access your array, the first set of brackets refers to the entries in the outer-most (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
-
-Example
+* __Access Multi-Dimensional Arrays With Indexes__
+* One way to think of a multi-dimensional array, is as an array of arrays
+* When you use brackets to access your array, the first set of brackets refers to the entries in the outer-most (the first level) array, and each additional pair of brackets refers to the next level of entries inside
 ```
 var arr = [
   [1,2,3],
@@ -41,14 +82,10 @@ arr[3]; // equals [[10,11,12], 13, 14]
 arr[3][0]; // equals [10,11,12]
 arr[3][0][1]; // equals 11
 ```
-* Note - There shouldn't be any spaces between the array name and the square brackets, like array [0][0] and even this array [0] [0] is not allowed. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
-
-* __ Basic JavaScript: Manipulate Arrays With push()
-* An easy way to append data to the end of an array is via the push() function.
-
-`.push()` takes one or more parameters and "pushes" them onto the end of the array.
-
-Examples:
+* __Note__ - There shouldn't be any spaces between the array name and the square brackets, like array [0][0] and even this array [0] [0] is not allowed. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code
+* __Manipulate Arrays With push()__
+* An easy way to append data to the end of an array is via the push() function
+* `.push()` takes one or more parameters and "pushes" them onto the end of the array
 ```
 var arr1 = [1,2,3];
 arr1.push(4);
@@ -58,38 +95,26 @@ var arr2 = ["Stimpson", "J", "cat"];
 arr2.push(["happy", "joy"]);
 // arr2 now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
 ```
-
-* __ Basic JavaScript: Manipulate Arrays With pop()
-* Another way to change the data in an array is with the .pop() function.
-
-`.pop()` is used to "pop" a value off of the end of an array. We can store this "popped off" value by assigning it to a variable. In other words, .pop() removes the last element from an array and returns that element.
-
-* Any type of entry can be "popped" off of an array - numbers, strings, even nested arrays.
+* __Manipulate Arrays With pop()__
+* `.pop()` is used to "pop" a value off of the end of an array. We can store this "popped off" value by assigning it to a variable. In other words, .pop() removes the last element from an array and returns that element
+* Any type of entry can be "popped" off of an array - numbers, strings, even nested arrays
 ```
 var threeArr = [1, 4, 6];
 var oneDown = threeArr.pop();
 console.log(oneDown); // Returns 6
 console.log(threeArr); // Returns [1, 4]
 ```
-
-* __ Basic JavaScript: Manipulate Arrays With shift()
+* __Manipulate Arrays With shift()__
 * pop() always removes the last element of an array. What if you want to remove the first?
-
-That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
-
-Example:
+* That's where `.shift()` comes in. It works just like .pop(), except it removes the first element instead of the last
 ```
 var ourArray = ["Stimpson", "J", ["cat"]];
 var removedFromOurArray = ourArray.shift();
 // removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
 ```
-
-* __ Basic JavaScript: Manipulate Arrays With unshift()
-* Not only can you shift elements off of the beginning of an array, you can also unshift elements to the beginning of an array i.e. add elements in front of the array.
-
-.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
-
-Example:
+* __Manipulate Arrays With unshift()__
+* Not only can you shift elements off of the beginning of an array, you can also unshift elements to the beginning of an array i.e. add elements in front of the array
+* `.unshift()` works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array
 ```
 var ourArray = ["Stimpson", "J", "cat"];
 ourArray.shift(); // ourArray now equals ["J", "cat"]
@@ -97,42 +122,30 @@ ourArray.unshift("Happy");
 // ourArray now equals ["Happy", "J", "cat"]
 Add ["Paul",35] to the beginning of the myArray variable using unshift().
 ```
-
-* __ Basic JavaScript: Write Reusable JavaScript with Functions
-In JavaScript, we can divide up our code into reusable parts called functions.
-
-Here's an example of a function:
-
+* __Write Reusable JavaScript with Functions__
+* In JavaScript, we can divide up our code into reusable parts called functions
+```
 function functionName() {
   console.log("Hello World");
 }
-You can call or invoke this function by using its name followed by parentheses, like this: functionName(); Each time the function is called it will print out the message "Hello World" on the dev console. All of the code between the curly braces will be executed every time the function is called.
-
-
-* __ Basic JavaScript: Passing Values to Functions with ArgumentsPassed
-Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
-
-Here is a function with two parameters, param1 and param2:
-
+```
+* You can call or invoke this function by using its name followed by parentheses, like this: functionName(); Each time the function is called it will print out the message "Hello World" on the dev console. All of the code between the curly braces will be executed every time the function is called
+* __Passing Values to Functions with Arguments__
+* Parameters are variables that act as placeholders for the values that are to be input to a function when it is called
+* When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments
+```
 function testFun(param1, param2) {
   console.log(param1, param2);
 }
-Then we can call testFun: testFun("Hello", "World"); We have passed two arguments, "Hello" and "World". Inside the function, param1 will equal "Hello" and param2 will equal "World". Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
-
-* __ Basic JavaScript: Global Scope and Functions
-In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
-
-Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.
-
-Using var, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
-
-Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
-
-* __ Basic JavaScript: Local Scope and Functions
-Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function.
-
-Here is a function myTest with a local variable called loc.
-
+```
+* Then we can call testFun: testFun("Hello", "World"); We have passed two arguments, "Hello" and "World". Inside the function, param1 will equal "Hello" and param2 will equal "World". Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
+* __Global Scope and Functions__
+* In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+* Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.
+* __Local Scope and Functions__
+* Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function.
+* Here is a function myTest with a local variable called loc.
+```
 function myTest() {
   var loc = "foo";
   console.log(loc);
@@ -140,38 +153,30 @@ function myTest() {
 myTest(); // logs "foo"
 console.log(loc); // loc is not defined
 loc is not defined outside of the function.
-
-The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
-
-Note: The console will still have 'ReferenceError: myVar is not defined', but this will not cause the tests to fail.
-
-* __ Basic JavaScript: Global vs. Local Scope in Functions
-It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
-
-In this example:
-
+```
+* The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
+* __Note__: The console will still have 'ReferenceError: myVar is not defined', but this will not cause the tests to fail.
+* __Global vs. Local Scope in Functions__
+* It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+```
 var someVar = "Hat";
 function myFun() {
   var someVar = "Head";
   return someVar;
 }
-The function myFun will return "Head" because the local version of the variable is present.
-
-Add a local variable to myOutfit function to override the value of outerWear with "sweater".
-
-* __ Basic JavaScript: Understanding Undefined Value returned from a Function
-A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
-
-Example
-
+```
+* The function myFun will return "Head" because the local version of the variable is present.
+* __Basic JavaScript: Understanding Undefined Value returned from a Function__
+* A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+```
 var sum = 0;
 function addSum(num) {
   sum = sum + num;
 }
 addSum(3); // sum will be modified but returned value is undefined
-addSum is a function without a return statement. The function will change the global sum variable but the returned value of the function is undefined.
-
-* __ Basic JavaScript: Stand in Line
+```
+* addSum is a function without a return statement. The function will change the global sum variable but the returned value of the function is undefined.
+* __Stand in Line__
 In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
 
 ```
