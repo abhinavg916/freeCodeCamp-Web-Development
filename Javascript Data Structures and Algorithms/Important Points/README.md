@@ -1,7 +1,8 @@
 # Important Points
 ## Basic JavaScript
 * __Declare JavaScript Variables__
-* JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
+  * JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
+
 * __Understanding Uninitialized Variables__
 * When JavaScript variables are declared, they have an initial value of undefined. 
 * If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number"
