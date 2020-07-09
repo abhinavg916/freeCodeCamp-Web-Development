@@ -1,7 +1,7 @@
 # Important Points
 ## Basic JavaScript
 * __Declare JavaScript Variables__
-  * JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
+* JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
 * __Understanding Uninitialized Variables__
 * When JavaScript variables are declared, they have an initial value of undefined. 
 * If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number"
@@ -441,7 +441,7 @@ var ourStorage = {
 ourStorage.cabinet["top drawer"].folder2;  // "secrets"
 ourStorage.desk.drawer; // "stapler"
 
-* __ Basic JavaScript: Accessing Nested ArraysPassed
+* __ Basic JavaScript: Accessing Nested Arrays
 As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
 
 Here is an example of how to access a nested array:
