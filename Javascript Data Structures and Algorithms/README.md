@@ -1,4 +1,6 @@
 # JavaScript Data Structures and Algorithms Certification
+* Each chapters has Important Notes and Solutions of the exercises
+
 ## Contents
 * Basic JavaScript
 * ES6
