@@ -422,7 +422,7 @@ This is an array which contains one object inside. The object has various pieces
 }
 __Note - You will need to place a comma after every object in the array, unless it is the last object in the array.__
 
-* __ Basic JavaScript: Accessing Nested ObjectsPassed
+* __ Basic JavaScript: Accessing Nested Objects
 The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
 
 Here is a nested object:
@@ -442,7 +442,7 @@ var ourStorage = {
 ourStorage.cabinet["top drawer"].folder2;  // "secrets"
 ourStorage.desk.drawer; // "stapler"
 
-* __ Basic JavaScript: Accessing Nested ArraysPassed
+* __ Basic JavaScript: Accessing Nested Arrays
 As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
 
 Here is an example of how to access a nested array:
@@ -468,4 +468,137 @@ var ourPets = [
 ourPets[0].names[1]; // "Fluffy"
 ourPets[1].names[0]; // "Spot"
 
-* __     
+* __Record Collection__
+* You are given a JSON object representing a part of your musical album collection. Each album has several properties and a unique id number as its key. Not all albums have complete information.
+
+Write a function which takes an album's id (like 2548), a property prop (like "artist" or "tracks"), and a value (like "Addicted to Love") to modify the data in this collection.
+```
+// Setup
+var collection = {
+  2548: {
+    album: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: [
+      "Let It Rock",
+      "You Give Love a Bad Name"
+    ]
+  },
+  2468: {
+    album: "1999",
+    artist: "Prince",
+    tracks: [
+      "1999",
+      "Little Red Corvette"
+    ]
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [ ]
+  },
+  5439: {
+    album: "ABBA Gold"
+  }
+};
+
+// Only change code below this line
+function updateRecords(id, prop, value) {
+
+
+  return collection;
+}
+
+updateRecords(5439, "artist", "ABBA");
+
+
+```
+
+* __Iterate with JavaScript While Loops__
+* Add Elements to array
+```
+// Setup
+var myArray = [];
+var i = 5;
+while( i >= 0){
+  myArray.push(i);
+  i--;
+}
+
+// Only change code below this line
+
+```
+* __Nesting For Loops__
+* If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:
+```
+var arr = [
+  [1,2], [3,4], [5,6]
+];
+for (var i=0; i < arr.length; i++) {
+  for (var j=0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+```
+* __Generate Random Fractions with JavaScript__
+* JavaScript has a Math.random() function that generates a random decimal number between 0 (inclusive) and not quite up to 1 (exclusive). Thus Math.random() can return a 0 but never quite return a 1
+
+* __Generate Random Whole Numbers within a Range__
+* To do this, we'll define a minimum number min and a maximum number max.
+
+Here's the formula we'll use. Take a moment to read it and try to understand what this code is doing:
+
+Math.floor(Math.random() * (max - min + 1)) + min
+
+* __Use the parseInt Function__
+* The parseInt() function parses a string and returns an integer. Here's an example:
+
+var a = parseInt("007"); // 
+
+The above function converts the string "007" to an integer 7. If the first character in the string can't be converted into a number, then it returns NaN.
+
+* __Use the parseInt Function with a Radix__
+The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
+
+The function call looks like:
+
+parseInt(string, radix);
+
+And here's an example:
+
+var a = parseInt("11", 2);
+
+The radix variable says that "11" is in the binary system, or base 2. This example converts the string "11" to an integer 3.
+
+* __Use the Conditional (Ternary) Operator__
+The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
+
+The syntax is:
+
+condition ? statement-if-true : statement-if-false;
+
+* __Use Multiple Conditional (Ternary) Operators__
+* The following function uses if, else if, and else statements to check multiple conditions:
+
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+The above function can be re-written using multiple conditional operators:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+It is considered best practice to format multiple conditional operators such that each condition is on a separate line, as shown above. Using multiple conditional operators without proper indentation may make your code hard to read. For example:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+ 
