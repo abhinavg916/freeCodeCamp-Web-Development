@@ -1,5 +1,5 @@
 # ES6
-## Differences Between the `var` and `let` Keywords
+## Differences Between the var and let Keywords
 ```
 let catName;
 let quote;
@@ -12,7 +12,7 @@ function catTalk() {
 catTalk();
 ```
 
-## Compare Scopes of the `var` and `let` Keywords
+## Compare Scopes of the var and let Keywords
 ```
 function checkScope() {
   'use strict';
