@@ -1,5 +1,4 @@
-# Exercise Solutions
-## Basic JavaScript
+# Basic JavaScript
 ```
 ```
 ```
@@ -14,7 +13,7 @@
 ```
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
 ```
-* Record Collection
+## Record Collection
 ```
 // Setup
 var collection = {

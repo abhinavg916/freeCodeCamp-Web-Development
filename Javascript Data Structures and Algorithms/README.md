@@ -1,5 +1,5 @@
 # JavaScript Data Structures and Algorithms Certification
-* Each chapters has Important Notes and Solutions of the exercises
+* Each chapters has Important Notes and Exercise Solutions
 
 ## Contents
 * Basic JavaScript
@@ -12,6 +12,9 @@
 * Functional Programming
 * Intermediate Algorithm Scripting
 * JavaScript Algorithms and Data Structures Project
+
+## Certificate
+![Certificate]()
 
 ## Author
 * Name - Abhinav

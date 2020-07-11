@@ -1,5 +1,4 @@
-# Important Points
-## Basic JavaScript
+# Basic JavaScript
 * __Declare JavaScript Variables__
   * JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object
 
