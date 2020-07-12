@@ -73,4 +73,15 @@ console.log(i);
 ```
 * i is not defined because it was not declared in the global scope. It is only declared within the for loop statement. printNumTwo() returned the correct value because three different i variables with unique values (0, 1, and 2) were created by the let keyword within the loop statement.
 
-## 
+## Declare a Read-Only Variable with the const Keyword
+* The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.
+
+* const has all the awesome features that let has, with the added bonus that variables declared using const are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned.
+```
+"use strict";
+const FAV_PET = "Cats";
+FAV_PET = "Dogs"; // returns error
+```
+* A common practice when naming constants (or variabls with const) is to use all uppercase letters, with words separated by an underscore.
+* Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
+* 
