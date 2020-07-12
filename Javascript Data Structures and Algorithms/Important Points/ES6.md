@@ -84,4 +84,5 @@ FAV_PET = "Dogs"; // returns error
 ```
 * A common practice when naming constants (or variabls with const) is to use all uppercase letters, with words separated by an underscore.
 * Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
-* 
+
+## 
