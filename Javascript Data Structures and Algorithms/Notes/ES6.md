@@ -292,3 +292,76 @@ console.log(greeting); // prints
 * A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${ and }. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating strings gives you more flexibility to create robust strings.
 
 
+
+
+
+
+
+
+## Use * to Import Everything from a File
+* Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the import * as syntax. Here's an example where the contents of a file named math_functions.js are imported into a file in the same directory:
+```
+import * as myMathModule from "./math_functions.js";
+```
+* The above import statement will create an object called myMathModule. This is just a variable name, you can name it anything. The object will contain all of the exports from math_functions.js in it, so you can access the functions like you would any other object property. Here's how you can use the add and subtract functions that were imported:
+```
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+```
+
+## Create an Export Fallback with export default
+* There is another export syntax you need to know, known as export default. Usually you will use this syntax if only one value is being exported from a file. It is also used to create a fallback value for a file or module.
+
+* Below are examples using export default:
+```
+// named function
+export default function add(x, y) {
+  return x + y;
+}
+
+// anonymous function
+export default function(x, y) {
+  return x + y;
+}
+```
+* Since export default is used to declare a fallback value for a module or file, you can only have one value be a default export in each module or file. Additionally, you cannot use export default with var, let, or const
+
+## Import a Default Export
+* In the last challenge, you learned about export default and its uses. To import a default export, you need to use a different import syntax. In the following example, add is the default export of the math_functions.js file. Here is how to import it:
+```
+import add from "./math_functions.js";
+```
+* The syntax differs in one key place. The imported value, add, is not surrounded by curly braces ({}). add here is simply a variable name for whatever the default export of the math_functions.js file is. You can use any name here when importing a default.
+
+## Create a JavaScript Promise
+* A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so. Promise is a constructor function, so you need to use the new keyword to create one. It takes a function, as its argument, with two parameters - resolve and reject. These are methods used to determine the outcome of the promise. The syntax looks like this:
+```
+const myPromise = new Promise((resolve, reject) => {
+
+});
+```
+
+## Complete a Promise with resolve and reject
+
+## Handle a Fulfilled Promise with then
+* Promises are most useful when you have a process that takes an unknown amount of time in your code (i.e. something asynchronous), often a server request. When you make a server request it takes some amount of time, and after it completes you usually want to do something with the response from the server. This can be achieved by using the then method. The then method is executed immediately after your promise is fulfilled with resolve. Here’s an example:
+```
+myPromise.then(result => {
+  // do something with the result.
+});
+```
+* result comes from the argument given to the resolve method.
+
+## Handle a Rejected Promise with catch
+* catch is the method used when your promise has been rejected. It is executed immediately after a promise's reject method is called. Here’s the syntax:
+```
+myPromise.catch(error => {
+  // do something with the error.
+});
+```
+* error is the argument passed in to the reject method.
+* Note: the then and catch methods can be chained to the promise declaration if you choose.
+
+# --- THE END ---
+
+
