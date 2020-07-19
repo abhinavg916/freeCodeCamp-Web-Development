@@ -361,7 +361,3 @@ myPromise.catch(error => {
 ```
 * error is the argument passed in to the reject method.
 * Note: the then and catch methods can be chained to the promise declaration if you choose.
-
-# --- THE END ---
-
-
