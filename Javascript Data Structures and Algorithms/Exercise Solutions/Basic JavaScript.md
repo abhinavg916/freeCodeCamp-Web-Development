@@ -1,10 +1,13 @@
 # Basic JavaScript
-## 
+
+##
+
 ```
 
 ```
 
 ## Record Collection
+
 ```
 // Setup
 var collection = {
@@ -38,20 +41,20 @@ function updateRecords(id, prop, value) {
   if(prop !== 'tracks' && value !== "") {
     collection[id][prop] = value;
   }
-  
+
   if(prop === 'tracks' && collection[id][prop] === undefined) {
     collection[id][prop] = [];
   }
-  
+
   if(prop === 'tracks') {
     let track = collection[id][prop];
     track.push(value)
   }
-  
+
   if(value === "") {
     delete collection[id][prop]
   }
-  
+
   // console.log(collection)
   return collection;
 }

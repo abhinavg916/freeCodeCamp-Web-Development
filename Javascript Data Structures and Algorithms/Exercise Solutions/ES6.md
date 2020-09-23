@@ -1,5 +1,7 @@
 # ES6
+
 ## Differences Between the var and let Keywords
+
 ```
 let catName;
 let quote;
@@ -12,6 +14,7 @@ catTalk();
 ```
 
 ## Compare Scopes of the var and let Keywords
+
 ```
 function checkScope() {
   'use strict';
@@ -26,6 +29,7 @@ function checkScope() {
 ```
 
 ## Declare a Read-Only Variable with the const Keyword
+
 ```
 function printManyTimes(str) {
   "use strict";
@@ -40,6 +44,7 @@ printManyTimes("freeCodeCamp");
 ```
 
 ## Mutate an Array Declared with const
+
 ```
 const s = [5, 7, 2];
 function editInPlace() {
@@ -54,6 +59,7 @@ editInPlace();
 ```
 
 ## Prevent Object Mutation
+
 ```
 function freezeObj() {
   'use strict';
@@ -74,6 +80,7 @@ const PI = freezeObj();
 ```
 
 ## Use Arrow Functions to Write Concise Anonymous Functions
+
 ```
 const magic = () => {
   return new Date();
@@ -81,12 +88,14 @@ const magic = () => {
 ```
 
 ## Write Arrow Functions with Parameters
+
 ```
 const myConcat = (arr1, arr2) => arr1.concat(arr2);
 console.log(myConcat([1, 2], [3, 4, 5]));
 ```
 
 ## Set Default Parameters for Your Functions
+
 ```
 // Only change code below this line
 const increment = (number = 1, value = 1) => number + value;
@@ -94,6 +103,7 @@ const increment = (number = 1, value = 1) => number + value;
 ```
 
 ## Use the Rest Parameter with Function Parameters
+
 ```
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
@@ -101,6 +111,7 @@ const sum = (...args) => {
 ```
 
 ## Use the Spread Operator to Evaluate Arrays In-Place
+
 ```
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
@@ -109,7 +120,8 @@ console.log(arr2);
 
 ```
 
-## Use Destructuring Assignment to Extract Values from Objects 
+## Use Destructuring Assignment to Extract Values from Objects
+
 ```
 const HIGH_TEMPERATURES = {
   yesterday: 75,
@@ -124,6 +136,7 @@ const { today, tomorrow } = HIGH_TEMPERATURES;
 ```
 
 ## Use Destructuring Assignment to Assign Variables from Objects
+
 ```
 const HIGH_TEMPERATURES = {
   yesterday: 75,
@@ -132,11 +145,12 @@ const HIGH_TEMPERATURES = {
 };
 
 // Only change code below this line
-const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;  
+const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
 // Only change code above this line
 ```
 
 ## Use Destructuring Assignment to Assign Variables from Nested Objects
+
 ```
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
@@ -151,6 +165,7 @@ const { today: { low: lowToday, high: highToday}} = LOCAL_FORECAST;
 ```
 
 ## Use Destructuring Assignment to Assign Variables from Arrays
+
 ```
 let a = 8, b = 6;
 // Only change code below this line
@@ -158,6 +173,7 @@ let a = 8, b = 6;
 ```
 
 ## Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+
 ```
 const source = [1,2,3,4,5,6,7,8,9,10];
 function removeFirstTwo(list) {
@@ -171,6 +187,7 @@ const arr = removeFirstTwo(source);
 ```
 
 ## Use Destructuring Assignment to Pass an Object as a Function's Parameters
+
 ```
 const stats = {
   max: 56.78,
@@ -188,6 +205,7 @@ const half = ( { max, min } ) => (max + min) / 2.0;
 ```
 
 ## Create Strings using Template Literals
+
 ```
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
@@ -211,9 +229,10 @@ const resultDisplayArray = makeList(result.failure);
 ```
 
 ## Write Concise Object Literal Declarations Using Object Property Shorthand
+
 ```
 const createPerson = (name, age, gender) => ({
- 
+
   // Only change code below this line
   name, age, gender
   // Only change code above this line
@@ -222,6 +241,7 @@ const createPerson = (name, age, gender) => ({
 ```
 
 ## Write Concise Declarative Functions with ES6
+
 ```
 // Only change code below this line
 const bicycle = {
@@ -234,6 +254,7 @@ console.log(bicycle.gear);
 ```
 
 ## Use class Syntax to Define a Constructor Function
+
 ```
 // Only change code below this line
 class Vegetable {
@@ -248,6 +269,7 @@ console.log(carrot.name); // Should display 'carrot'
 ```
 
 ## Use getters and setters to Control Access to an Object
+
 ```
 // Only change code below this line
 class Thermostat {
@@ -272,6 +294,7 @@ temp = thermos.temperature; // 26 in Celsius
 ```
 
 ## Create a Module Script
+
 ```
 <html>
   <body>
@@ -282,7 +305,8 @@ temp = thermos.temperature; // 26 in Celsius
 </html>
 ```
 
-## Use export to Share a Code Block 
+## Use export to Share a Code Block
+
 ```
 const uppercaseString = (string) => {
   return string.toUpperCase();
@@ -296,15 +320,17 @@ export { uppercaseString, lowercaseString };
 ```
 
 ## Rseuse JavaScript Code Using import
+
 ```
-import { uppercaseString, lowercaseString } from './string_functions.js';  
+import { uppercaseString, lowercaseString } from './string_functions.js';
 // Only change code above this line
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
 ```
 
-## Use * to Import Everything from a File
+## Use \* to Import Everything from a File
+
 ```
 import * as stringFunctions from './string_functions.js';
 // Only change code above this line
@@ -314,6 +340,7 @@ stringFunctions.lowercaseString("WORLD!");
 ```
 
 ## Create an Export Fallback with export default
+
 ```
 export default function(x, y) {
   return x - y;
@@ -321,14 +348,16 @@ export default function(x, y) {
 ```
 
 ## Import a Default Export
+
 ```
-import subtract from './math_functions.js';  
+import subtract from './math_functions.js';
 // Only change code above this line
 
 subtract(7,4);
 ```
 
 ## Create a JavaScript Promise
+
 ```
 const makeServerRequest = new Promise((resolve, reject) => {
 
@@ -336,28 +365,30 @@ const makeServerRequest = new Promise((resolve, reject) => {
 ```
 
 ## Complete a Promise with resolve and reject
+
 ```
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer represents a response from a server
   let responseFromServer = true;
-    
+
   if(responseFromServer){
     resolve("We got the data");
-  } else {  
+  } else {
     reject("Data not received");
   }
 });
 ```
 
 ## Handle a Fulfilled Promise with then
+
 ```
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer is set to true to represent a successful response from a server
   let responseFromServer = true;
-    
+
   if(responseFromServer) {
     resolve("We got the data");
-  } else {  
+  } else {
     reject("Data not received");
   }
 });
@@ -368,14 +399,15 @@ makeServerRequest.then(result => {
 ```
 
 ## Handle a Rejected Promise with catch
+
 ```
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer is set to false to represent an unsuccessful response from a server
   let responseFromServer = false;
-    
+
   if(responseFromServer) {
     resolve("We got the data");
-  } else {  
+  } else {
     reject("Data not received");
   }
 });
