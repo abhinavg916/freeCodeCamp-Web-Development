@@ -1,7 +1,5 @@
 # JavaScript Data Structures and Algorithms Certification
 
-- Each chapter has **Notes** and **Exercise Solutions**
-
 ## Contents
 
 - Basic JavaScript
