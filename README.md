@@ -1,15 +1,9 @@
 # freeCodeCamp Web Development Specialization
+![freeCodeCamp](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
 
 ## Certifications
-* Responsive Web Design Certification
-* JavaScript Algorithms and Data Structures Certification
-* Front End Libraries Certification
-* Data Visualization Certification
-* APIs and Microservices Certification
-* Information Security and Quality Assurance Certification
-* Coding Interview Prep (Thousands of hours of challenges)
-
-![freeCodeCamp](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
+- [Responsive Web Design Certification](https://github.com/abhinavg916/freeCodeCamp-web-development/tree/master/Responsive%20Web%20Design)
+- [JavaScript Algorithms and Data Structures Certification](https://github.com/abhinavg916/freeCodeCamp-web-development/tree/master/Javascript%20Data%20Structures%20and%20Algorithms)
 
 ## Author
 * Name - Abhinav
