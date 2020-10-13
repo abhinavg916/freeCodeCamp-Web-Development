@@ -2,7 +2,7 @@
 
 ## Contents
 
-- Basic HTML and HTML5
+- Basic HTML
 - Basic CSS
 - Applied Visual Design
 - Applied Accessibility
