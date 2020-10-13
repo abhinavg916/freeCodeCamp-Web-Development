@@ -2,7 +2,7 @@
 
 ## Contents
 
-- Basic HTML
+- Basic HTML and HTML5
 - Basic CSS
 - Applied Visual Design
 - Applied Accessibility
@@ -10,6 +10,13 @@
 - CSS Flexbox
 - CSS Grid
 - Responsive Web Design Projects
+
+## Projects
+- Tribute Page
+- Survey Form
+- Product Landing Page
+- Technical Documentation Page
+- Personal Portfolio Webpage
 
 ## Certificate
 
