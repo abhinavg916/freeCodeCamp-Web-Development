@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  /* padding: 1.5rem; */
+  background-color: #fff;
+}
+
+body {
+  display: block;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#title {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+#title h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#title p {
+  text-align: center;
+}
+
+#img-div {
+  background-color: #fff;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+#image {
+  max-width: 70%;
+  max-height: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#tribute-info {
+  background-color: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+#tribute-info p {
+  font-size: 1.2rem;
+}
+
+#tribute-info ul {
+  max-width: 550px;
+  padding: 2rem;
+  margin: auto;
+  text-align: left;
+}
+
+#tribute-info ul li {
+  padding-bottom: 1rem;
+}
+
+#tribute-info em {
+  display: block;
+  margin: auto;
+  max-width: 550px;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  color: #666;
+}
+
+#tribute-info a {
+  cursor: pointer;
+  color: #477ca7;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin: auto;
+}
+
+footer a {
+  color: #333;
+}
