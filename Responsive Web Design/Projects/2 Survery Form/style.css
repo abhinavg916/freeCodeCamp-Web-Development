@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #eee;
+}
+
+#title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#description {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+#survey-form {
+  line-height: 1.5;
+  max-width: 700px;
+  margin: auto;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.form-fields {
+  margin: 1rem 0;
+}
+
+.field {
+  width: 100%;
+}
+
+.form-fields label {
+  padding: 0.5rem 0;
+}
+
+.form-fields input,
+.form-fields select {
+  max-width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.form-fields textarea {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+#submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin: auto;
+}
+
+footer a {
+  color: #333;
+}
