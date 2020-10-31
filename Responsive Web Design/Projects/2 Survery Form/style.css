@@ -9,7 +9,8 @@
 
 body {
   color: #333;
-  background-color: #eee;
+  background: url("https://source.unsplash.com/4Zaq5xY5M_c/640x480") no-repeat
+    center center/cover;
 }
 
 #title {
@@ -31,6 +32,7 @@ body {
   margin: auto;
   padding: 3rem;
   background-color: #fff;
+  line-height: 1.8;
 }
 
 .form-fields {
@@ -61,8 +63,8 @@ body {
 
 #submit {
   width: 100%;
-  padding: 1rem;
-  background-color: #333;
+  padding: 0.8rem;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -76,10 +78,6 @@ footer {
   text-align: center;
   padding: 2rem;
   line-height: 1.5;
-}
-
-.social-icons {
-  margin: auto;
 }
 
 footer a {
