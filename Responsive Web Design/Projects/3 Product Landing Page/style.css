@@ -24,10 +24,18 @@ body {
   margin: auto;
 }
 
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
 /* Header & Navigation Bar */
 header {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   height: 15vh;
   width: 100%;
@@ -37,55 +45,75 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  /* border: 1px solid red; */
 }
 
 #header-img {
   height: 100%;
-  flex-basis: auto;
-  /* border: 1px solid red; */
-}
-
-#nav-bar {
-  flex-basis: 50vw;
-  align-self: center;
 }
 
 #nav-bar ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
-  /* border: 1px solid red; */
 }
 
 #nav-bar ul li a {
   display: inline-block;
   padding: 1rem 3rem;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 #nav-bar ul li a:hover {
-  color: #fff;
+  border-bottom: 1px solid #333;
+}
+
+@media (max-width: 500px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    position: static;
+    margin-bottom: 2rem;
+  }
+
+  #header-img {
+    height: 50%;
+    align-self: center;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  #nav-bar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 /* Welcome */
 #welcome {
   margin-top: 25vh;
-  /* border: 1px solid red; */
 }
 
 #welcome h1 {
   margin: 1rem auto;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 #form {
   text-align: center;
 }
 
-#form input {
+#email {
   padding: 0.3rem 0.5rem;
   width: 300px;
 }
@@ -95,7 +123,7 @@ header {
   border: none;
   border-radius: 5px;
   margin: 1rem 0;
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -105,12 +133,17 @@ header {
   color: #ffc107;
 }
 
+@media (max-width: 500px) {
+  #welcome {
+    margin-top: 2rem;
+  }
+}
+
 /* Features */
 #features {
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
-  /* border: 1px solid red; */
 }
 
 #features h2 {
@@ -133,8 +166,33 @@ header {
 }
 
 .feature-list div {
-  flex-basis: auto;
   margin-left: 4rem;
+}
+
+@media (max-width: 500px) {
+  .icon-color {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .feature-list {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-list h3,
+  .feature-list p {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .feature-list div {
+    margin: 1rem 0;
+  }
 }
 
 /* How It Works */
@@ -143,13 +201,23 @@ header {
   flex-direction: column;
   margin: 2rem auto;
   align-items: center;
-  /* border: 1px solid red; */
+}
+
+#video {
+  width: 900px;
+  height: 506px;
 }
 
 #how-it-works h2 {
   margin-bottom: 1.5rem;
   font-size: 2rem;
-  /* border: 1px solid red; */
+}
+
+@media (max-width: 500px) {
+  #video {
+    max-width: 350px;
+    max-height: 200px;
+  }
 }
 
 /* Pricing */
@@ -158,26 +226,25 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid red; */
 }
 
 #pricing h2 {
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 2rem;
-  /* border: 1px solid red; */
 }
 
 #pricing > div {
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
   padding-bottom: 1.5rem;
 }
 
 .price-list {
   text-align: center;
   margin: 0rem 2rem;
+  border: 1px solid #333;
 }
 
 .price-list h4 {
@@ -214,6 +281,29 @@ header {
   color: #333;
 }
 
+@media (max-width: 500px) {
+  #pricing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-list h4 {
+    background-color: #333;
+    color: #ffc107;
+  }
+
+  .price-list {
+    text-align: center;
+    margin: 1.5rem 3rem;
+  }
+
+  .price-select {
+    background-color: #ffc107;
+    color: #333;
+  }
+}
+
 /* Product Foooter */
 #product-footer {
   display: flex;
@@ -221,7 +311,6 @@ header {
   align-items: center;
   background-color: #333;
   margin: 2rem auto;
-  /* border: 1px solid red; */
 }
 
 #product-footer a {
@@ -231,6 +320,23 @@ header {
 
 #product-footer a:hover {
   color: #ffc107;
+}
+
+@media (max-width: 500px) {
+  #product-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  #product-footer a {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
 }
 
 /* Footer */
