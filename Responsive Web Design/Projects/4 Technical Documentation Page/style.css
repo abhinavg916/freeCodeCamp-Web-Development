@@ -18,14 +18,12 @@ a {
 }
 
 .container {
-  margin-top: 10vh;
   display: flex;
   flex-direction: row;
 }
 
 @media (max-width: 500px) {
   .container {
-    margin-top: 0;
     flex-direction: column;
   }
 }
@@ -38,17 +36,11 @@ a {
   color: #fff;
   height: 10vh;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 @media (max-width: 500px) {
   #page-title {
     height: 15vh;
-    position: static;
-    top: 0;
-    left: 0;
   }
 }
 
@@ -114,8 +106,9 @@ header h2 {
   margin-bottom: 2rem;
 }
 
-.main-section h2 {
+.main-section header {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .main-section h3 {
@@ -144,7 +137,7 @@ header h2 {
     margin-bottom: 2rem;
   }
 
-  .main-section h2 {
+  .main-section header {
     text-align: center;
   }
 
