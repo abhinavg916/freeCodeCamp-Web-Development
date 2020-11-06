@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+
+/* Page Title */
+#page-title {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 500px) {
+  #page-title {
+    height: 15vh;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Navbar */
+#navbar {
+  flex-basis: 20vw;
+  flex-shrink: 0;
+  border-right: #333 5px solid;
+}
+
+header h2 {
+  padding: 1rem 2.5rem;
+}
+
+.nav-link {
+  display: block;
+  border-top: #333 1px solid;
+  padding: 0.75rem 3rem;
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-basis: auto;
+    border: none;
+  }
+
+  header h2 {
+    text-align: center;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+/* Main Doc */
+#main-doc {
+  flex-basis: auto;
+  padding: 1rem 3rem;
+}
+
+.main-section {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  border-bottom: #333 5px solid;
+}
+
+.main-section code {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  background-color: #eee;
+  font-size: 0.9rem;
+}
+
+.main-section p {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.main-section h2 {
+  font-size: 2rem;
+}
+
+.main-section h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.main-section ul {
+  padding-left: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 2;
+}
+
+@media (max-width: 500px) {
+  #main-doc {
+    flex-basis: auto;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-top: #333 10px solid;
+  }
+
+  .main-section,
+  .main-section p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .main-section h2 {
+    text-align: center;
+  }
+
+  .main-section code {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .main-section p {
+    padding-left: 0rem;
+  }
+
+  .main-section h3 {
+    text-align: center;
+  }
+
+  .main-section ul {
+    padding-left: 2rem;
+    line-height: 1.5;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 2;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
