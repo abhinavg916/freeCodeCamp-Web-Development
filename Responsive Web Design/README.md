@@ -21,4 +21,4 @@
 
 ## Certificate
 
-![RWDC]()
+![RWDC](https://github.com/abhinavg916/freeCodeCamp-web-development/blob/master/Responsive%20Web%20Design/Responsive%20Web%20Design.png)
