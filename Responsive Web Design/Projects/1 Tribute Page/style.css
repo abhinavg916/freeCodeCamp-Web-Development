@@ -93,14 +93,13 @@ body {
 
 footer {
   text-align: center;
-  padding: 2rem;
-  line-height: 1.5;
-}
-
-.social-icons {
-  margin: auto;
+  padding: 2rem 0;
+  line-height: 2;
+  background-color: #333;
+  color: #fff;
 }
 
 footer a {
-  color: #333;
+  text-decoration: none;
+  color: #fff;
 }
