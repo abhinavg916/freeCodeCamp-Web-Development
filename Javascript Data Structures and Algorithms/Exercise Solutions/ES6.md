@@ -2,7 +2,7 @@
 
 ## Differences Between the var and let Keywords
 
-```
+```js
 let catName;
 let quote;
 function catTalk() {
