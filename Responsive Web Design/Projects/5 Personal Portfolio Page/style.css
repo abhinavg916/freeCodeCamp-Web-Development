@@ -46,6 +46,7 @@ a {
   color: var(--light-color);
   display: block;
   padding: 1.5rem 3rem;
+  transition: all 0.25s ease-in-out;
 }
 
 #navbar ul li a:hover {
@@ -79,8 +80,8 @@ a {
   justify-content: center;
   align-items: center;
   line-height: 1.7;
-  background: url("https://source.unsplash.com/wn-KYaHwcis/1280x720") no-repeat
-    center center/cover;
+  background: url("https://source.unsplash.com/rvBPaAwHMS8/1280x720") no-repeat center center/cover;
+  color: white;
 }
 
 #welcome-section h1 {
